@@ -1,21 +1,29 @@
 package Lista2.AgendaTelefonica;
 
 public class Contato {
-    String nome;
-    String telefone;
-    String email;
-    
-    void alterarTelefone(String novoTelefone){
-        this.telefone = novoTelefone;
+    private String nome;
+    private String telefone;
+    private String email;
+
+    public Contato(String nome, String telefone, String email){
+        this.nome = nome;
+        this.telefone = telefone;
+        this.email = email;
     }
-    void alterarEmail(String novoEmail){
-        this.email = novoEmail;
+    public String getNome(){
+        return this.nome;
     }
-    void exibirContato(){
-        System.out.println("Nome: "+ nome +
-                           "\nTelefone: "+ telefone +
-                           "\nEmail: "+ email);
-        System.out.println();
+    public String getTelefone(){
+        return this.telefone;
     }
-    // boolean validarEmail
+    public String getEmail(){
+        return this.email;
+    }
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
+    // boolean validarEmail*/
 }

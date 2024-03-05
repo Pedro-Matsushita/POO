@@ -2,17 +2,13 @@ package Lista2.AgendaTelefonica;
 
 public class Main {
     public static void main(String[] args) {
-        Contato at = new Contato();
-        System.out.println("Contato antigo");
-        at.nome = "Claudio";
-        at.telefone = "96482-3301";
-        at.email = "claudiotek@gmail.com";
-        at.exibirContato();
+        Contato at = new Contato("Jetosbaldo", "8700-9624", "jetos@gmail.com");
 
-        System.out.println("Contato novo");
-        at.alterarTelefone("96770-8479");
-        at.alterarEmail("claudiotecno@gmail.com");
-        at.exibirContato();
+        at.setTelefone("9784-0231");
+        at.setEmail("baldo@gmail.com");
+
+        System.out.println(at.getNome());
+        System.out.println(at.getTelefone());
+        System.out.println(at.getEmail());    
     }
-    
 }
